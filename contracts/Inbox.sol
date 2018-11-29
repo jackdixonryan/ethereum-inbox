@@ -1,14 +1,14 @@
-pragma solidity ^0.4.0;
+pragma solidity ^0.4.17;
 
-contract Index {
-    string message;
+contract Inbox {
+    string public message;
 
-    function set(string newMessage) public {
-        message = newMessage;
+    function Inbox(string initialMessage) public {
+        message = initialMessage;
     }
-
-    function get() public view returns (string) {
-        return message;
+    
+    function setMessage(string newMessage) public {
+        message = newMessage;
     }
     
 }

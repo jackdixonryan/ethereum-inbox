@@ -13,4 +13,4 @@ const src = fs.readFileSync(inboxPath, 'utf8');
 
 
 // Now we export just the Inbox item of the resulting code. 
-module.exports = solc.compile(src, 1).contracts.Inbox;
+module.exports = solc.compile(src, 1).contracts[':Inbox'];
